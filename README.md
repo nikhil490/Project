@@ -48,7 +48,8 @@ Please Run CLI commands :
 
 ### Executing program
 
-python -m flask --app main.py 
+* python -m flask --app main.py 
+* Then use the link http://127.0.0.1:5000/ to access the application.
 
 ## Authors
 
