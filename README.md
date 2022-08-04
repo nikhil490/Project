@@ -51,7 +51,7 @@ Please Run CLI commands :
 
 * python -m flask --app main.py 
 * Then use the link http://127.0.0.1:5000/ to access the application.
-* Please see the webpage picture in the repository for a demo page.
+* Please see the demo.jpeg picture in the repository for a demo page.
 
 ## Authors
 
