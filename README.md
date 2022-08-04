@@ -6,6 +6,7 @@ A simply app using python to monitor real time values of different measures per 
 ## Description
 
 * Search Using the Station ID eg: 1029TH,52207,531118,E21136,E2043
+* The latest values, todays value and past 24 hours can be choosen. The default filter is past 24 hours.
 * A table containing Values for each measures and Time
 * Line Plots of each measures over time
 * A table containing the important properties of the Station Measure is also included.
