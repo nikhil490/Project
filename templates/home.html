@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<body>
+<div>
+  <h1>Environment Agency Real Time Flood-Monitoring </h1>
+  <h3>Please Input ID of the Required Station</h3>
+</div>
+<div>
+  <form method="post">
+    <input type="text" placeholder="ID" name="id" value="{{
+      request.form.id }}" required = "required">
+      <br>
+      <p>Please select your favorite Web language:</p>
+        <input type="radio" id="today" name="TimeZone" value="today">
+        <label for="today">Today</label><br>
+        <input type="radio" id="latest" name="TimeZone" value="latest">
+        <label for="latest">Latest</label><br>
+        <input type="radio" id="past" name="TimeZone" value="past" checked="checked">
+        <label for="past">Past 24 Hours</label>
+      <a href=# id=test><button class='btn btn-default'>Test</button></a>
+  </form>
+  <p>Select The required Option </p>
+  {% if error %}
+    <p class=error><strong>Error:</strong> {{ error }}
+  {% endif %}
+</div>
+        
+<div id='chart' class='chart'”></div>
+</body>
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+<script type='text/javascript'>
+  var graphs = {{image | safe}};
+  Plotly.plot('chart',graphs,{});
+</script>
+</html>
