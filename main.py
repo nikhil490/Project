@@ -15,6 +15,7 @@ def data():
     """
     Home Page 
     The result from the api is collected and Tables and Figures are generated 
+    @return: Template home.html
     """
     if request.method == "GET":
         return render_template('home.html',)
@@ -57,9 +58,10 @@ def data():
 
 def make_plot(meas,measures):
     """
-    Funtion To Create Plot
+    Funtion To Create Plot and Table
     @param:meas dict- contains the measured values with measure as keys
-    @param:measures dict-contains the 
+    @param:measures dict-contains the measures By a station
+    @return: graphJSON- jsonified plot
     """
     from plotly.graph_objs.scatter import Line
     specs=[[{"type": "table"}]]
