@@ -42,8 +42,8 @@ Werkzeug==2.2.1
 ### Installing
 After cloning the repository 
 Please Run CLI commands :
-cd Projects
-pip install -r requirements.txt
+* cd Projects
+* pip install -r requirements.txt
 
 
 ### Executing program
